@@ -10,17 +10,13 @@ commands = [
 command = commands[0]
 
 if command[0] =='/':
-    if ' 'in command:
+    if ' 'in command:  # 띄어쓰기 후에 추가 input 있음
         words =command.split(' ')
         if words=[0] == '/번역'
-            pass  # 번역작업 with words[1]
-        elif words=[1] == '/주식'
-            pass # 주식 갖오기 작업 with words[1]
+            pass
 
-    else:
+    else:  # 띄어쓰기 없음
         if command == '/미세먼지':
             pass
-        elif command == '/코스피':
-            pass
-else:
+ 
     print(commands)
